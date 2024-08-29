@@ -1,0 +1,253 @@
+/* General styles for the page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+/* Container for the login elements */
+
+.login-container {
+    width: 100%;
+    max-width: 390px;
+    /* Increased container width */
+    text-align: center;
+    padding: 35px 0;
+}
+
+
+/* Styles for the login box */
+
+.login-box {
+    background-color: #fff;
+    border: 0.5px solid #D3D3D3;
+    padding: 25px;
+    /* Increased padding */
+    border-radius: 3px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    margin: 0 auto;
+    /* Center horizontally */
+    max-width: 100%;
+    /* Ensure it scales within the container */
+}
+
+
+/* Instagram heading */
+
+.instagram-logo {
+    width: 180px;
+    /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/* Form input fields */
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    max-width: 260px;
+    /* Keep input width the same */
+    padding: 8px;
+    /* Keep padding the same */
+    margin: 6px 0;
+    /* Keep margin the same */
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    font-size: 14px;
+    /* Keep font size the same */
+}
+
+
+/* Remove color change on focus */
+
+.login-box input:focus {
+    border-color: #dbdbdb;
+    /* Keep border color the same */
+    outline: none;
+    /* Remove default focus outline */
+    background-color: #fafafa;
+    /* Keep background color the same */
+}
+
+
+/* Log in button */
+
+.login-box button[type="submit"] {
+    width: 100%;
+    max-width: 260px;
+    /* Match input width */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #3897f0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-box button[type="submit"]:hover {
+    background-color: #3183e0;
+}
+
+
+/* Divider between options */
+
+.or-divider {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-divider::before {
+    left: 0;
+}
+
+.or-divider::after {
+    right: 0;
+}
+
+
+/* Facebook login button */
+
+
+/* Facebook login button */
+
+.facebook-login {
+    width: 100%;
+    max-width: 360px;
+    /* Match input width */
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffff;
+    border: none;
+    border-radius: 4px;
+    color: #4268b3;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 10px;
+    /* Space between logo and text */
+}
+
+.facebook-login .facebook-logo {
+    width: 26px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-right: -7px;
+    /* Space between logo and text */
+    vertical-align: middle;
+    /* Ensure logo aligns with text */
+}
+
+
+/* Forgot password link */
+
+
+/* Forgot password link */
+
+.forgot-password {
+    display: block;
+    /* Ensure it’s a block element for proper alignment */
+    color: #00376b;
+    font-size: 14px;
+    /* Adjusted font size for better readability */
+    margin: 10px 0;
+    /* Margin to separate it from other elements */
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: #002a5a;
+    /* Slightly darker color on hover */
+}
+
+
+/* Sign up section */
+
+.signup {
+    font-size: 14px;
+    margin-top: 10px;
+    /* Space between the login box and sign-up section */
+    padding: 8px;
+    /* Increased padding for more space inside the border */
+    border: 1px solid #dbdbdb;
+    /* Border around the section */
+    border-radius: 3px;
+    /* Rounded corners */
+    background-color: #fff;
+    /* Background color */
+    width: 100%;
+    /* Full width of the container */
+    max-width: 390px;
+    /* Increased maximum width to make it larger */
+    box-sizing: border-box;
+    /* Include padding and border in the element’s total width and height */
+    text-align: center;
+    /* Center text inside */
+    margin-left: auto;
+    /* Center the section horizontally */
+    margin-right: auto;
+    /* Center the section horizontally */
+}
+
+.signup a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+
+/* Center the app links and the images */
+
+.app-links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -10px;
+}
+
+
+/* Adjust the size of the images */
+
+.store-buttons img {
+    width: 120px;
+    height: auto;
+}
